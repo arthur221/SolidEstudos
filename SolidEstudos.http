@@ -1,0 +1,6 @@
+@SolidEstudos_HostAddress = http://localhost:5287
+
+GET {{SolidEstudos_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
