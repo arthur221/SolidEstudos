@@ -4,8 +4,7 @@ using SolidEstudos.Models;
 namespace SolidEstudos.Repositories;
 
 // vou criar uma lista em memoria para ficar mais simples
-// O resto do sistema NUNCA vai conhecer essa classe diretamente — só a interface (DIP).
-// o resto do sistema nao vai conhecer essa classe so a interface isso é o principio da inversão de dependência (DIP)
+// O resto do sistema NUNCA vai conhecer essa classe diretamente só a interface isso é o principio da inversão de dependência.
 public class ReservaRepository : IReservaRepository
 {
     private readonly List<Reserva> _reservas = new();

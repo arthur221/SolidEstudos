@@ -8,4 +8,7 @@ public class Reserva
     public DateTime CheckIn { get; set; }
     public DateTime CheckOut { get; set; }
     public decimal ValorTotal { get; set; }
+
+    public int CalcularNoites() => (CheckOut - CheckIn).Days;
+
 }
