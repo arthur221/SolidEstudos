@@ -1,3 +1,4 @@
+using SolidEstudos.Exceptions;
 using SolidEstudos.Interfaces;
 using SolidEstudos.Models;
 
@@ -21,6 +22,10 @@ public class ReservaService
         DateTime checkIn, DateTime checkOut,
         decimal valorDiaria, ITarifaStrategy tarifaStrategy)
     {
+
+        if (checkOut <= checkIn)
+        throw new ReservaException("A data de check-out deve ser depois do check-in.");
+
         var reserva = new Reserva
         {
             Hospede = hospede,
@@ -31,7 +36,7 @@ public class ReservaService
         };
 
         // O cálculo do valor fica por conta da estratégia escolhida,
-        // assim posso criar novas regras de tarifa sem mexer nesse serviço.
+        // assim posso criar novas regras de tarifa sem mexer nesse serviço
         var noites = reserva.CalcularNoites();
         reserva.ValorTotal = tarifaStrategy.CalcularTarifa(valorDiaria, noites);
 

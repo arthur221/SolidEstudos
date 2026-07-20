@@ -1,8 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using SolidEstudos.Factories;
-using SolidEstudos.Interfaces;
 using SolidEstudos.Services;
-using SolidEstudos.Strategies;
 
 namespace SolidEstudos.Controllers;
 

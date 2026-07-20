@@ -3,9 +3,9 @@ using SolidEstudos.Strategies;
 
 namespace SolidEstudos.Factories;
 
-// Centralizei aqui a escolha da estratégia de tarifa.
+// Centralizei aqui a escolha da estratégia de tarifa
 // Assim essa lógica não fica espalhada pelo sistema e,
-// se surgir um novo tipo de quarto, basta adicionar o caso aqui.
+// se surgir um novo tipo de quarto, basta adicionar o caso aqui
 public class TarifaStrategyFactory
 {
     public ITarifaStrategy Criar(string tipoQuarto)

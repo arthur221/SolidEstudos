@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolidEstudos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab75959b637bb79a238d15dce51ab227244b0e6e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a11cedf0534956b5a1f0e6c013bd5443951b36ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolidEstudos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolidEstudos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
